@@ -2,3 +2,7 @@ header {
   height:100px;
   background-color:E1E1FF;
 }
+
+.logo {
+  background-image: url("http://thumbs.dreamstime.com/z/logo-luxury-car-14210086.jpg");
+}
