@@ -1,9 +1,11 @@
 header {
   height:100px;
+  margin: 0;
+  padding: 0;
+  border: 0;
   background-color:E1E1FF;
 }
 
 .logo {
-  display:inline-block;
   background-image: url("http://www.grenadaexplorer.com/car-rentals/images/jb_logo.gif");
 }
