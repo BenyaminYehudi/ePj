@@ -4,5 +4,6 @@ header {
 }
 
 .logo {
+  display:inline-block;
   background-image: url("http://thumbs.dreamstime.com/z/logo-luxury-car-14210086.jpg");
 }
