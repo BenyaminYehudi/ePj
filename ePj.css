@@ -19,6 +19,7 @@ body {
    border: 1px solid #cccc33;
    border-radius: 7pt;
    background: #dddd88;
+   background-image:url("http://www.yours-cars.eu/IMG/RENAULT/Renault%20safrane%20sea.jpg");
    -webkit-flex: 3 1 60%;
            flex: 3 1 60%;
    -webkit-order: 2;
