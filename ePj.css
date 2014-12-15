@@ -4,8 +4,13 @@ header {
   padding: 0;
   border: 0;
   background-color:E1E1FF;
+  text-align:center;
 }
 
 .logo {
   
+}
+
+main {
+  background-image:url("http://www.yours-cars.eu/IMG/RENAULT/Renault%20safrane%20sea.jpg");
 }
