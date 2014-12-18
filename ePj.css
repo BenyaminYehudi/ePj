@@ -50,7 +50,7 @@ body {
            order: 3;
    }
  
-  header, footer {
+  header, footer, header > img {
    display: block;
    margin: 4px;
    padding: 5px;
@@ -75,8 +75,12 @@ body {
             order: 0;
    }
   
-   #main > nav, #main > aside, header, footer {
+   #main > nav, #main > aside, header, footer, header > img {
     min-height: 50px;
     max-height: 50px;
    }
   }
+
+header > img {
+   
+}
