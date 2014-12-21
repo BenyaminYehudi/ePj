@@ -84,7 +84,7 @@ body {
    }
   }
 
-header > img {
+header > a {
    height:100px;
    width:100px;
 }
