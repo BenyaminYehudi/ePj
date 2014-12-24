@@ -1,7 +1,7 @@
 <html>
   <head>
     <title>Car Rental, yay!</title>
-    <script src="ePjMjs.js"></script>
+    <script src="ePjRegister.js"></script>
     <script src=></script>
     <script src=></script>
     <script src=></script>
@@ -15,9 +15,40 @@
   </a>
  </header>
  <div id='main'>
-    <article>article</article>
+    <article>
+      <img src="http://cache4.asset-cache.net/gc/95876714-cartoon-character-happy-man-drives-sports-car-gettyimages.jpg?v=1&c=IWSAsset&k=2&d=bNvt3cAKQsxLJE%2B4dH%2FkIAXL3CkWIrgCZO4vG34lDKY%3D">
+    </article>
     <nav>nav</nav>
-    <aside>aside</aside>
+    <aside>
+      <div>
+      <h3>Sign Up Now</h3>
+      <span class="help">*required field</span>
+      <div class="popup">
+<h2>Register</h2>
+<p>Please enter your details here</p>
+<form method="get" action="" onsubmit="return store(this);" id="register">
+<label for="email">User Name</label>
+<input type="text" id="username" placeholder="Select A User Name" required value="" /><br />
+<label for="pass">Password</label>
+<input type="password" id="password" placeholder="Select A Password" required value="" /><br />
+<input type="submit" value="Register" />
+</form>
+</div>
+<br />
+<div class="popup">
+<h2>Welcome Guest!</h2>
+<p>Please enter your login and password here</p>
+<form method="get" action="" onsubmit="return login(this);" id="signon">
+<label for="email">User Name </label>
+<input type="text" id="username" placeholder="Your Password" required value="" /><br />
+<label for="password">Password</label>
+<input type="password" id="password" placeholder="Your Password" required value="" /><br />
+<input type="submit" value="Log In" />
+</form>
+<a class="close" href="#close"></a>
+</div>
+      </div>
+    </aside>
  </div>
  <footer>All rights resevered JB Rental Ltd. &#169 2008-<span id="footerYear"></span></footer>
   </body>
