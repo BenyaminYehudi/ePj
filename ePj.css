@@ -1,7 +1,7 @@
 body {
    width:1000px;
    font: 24px Helvetica;
-   background: #999999;
+   background: #E0E0E0;
    margin: 0 auto;
    }
 
@@ -20,7 +20,7 @@ body {
    padding: 5px;
    border: 1px solid #cccc33;
    border-radius: 7pt;
-   background: #dddd88;
+   background: #3D8BFF;
    background:url("http://www.yours-cars.eu/IMG/RENAULT/Renault%20safrane%20sea.jpg");
    background-size: 100% 100%;
    -webkit-flex: 3 1 60%;
@@ -34,7 +34,7 @@ body {
    padding: 5px;
    border: 1px solid #8888bb;
    border-radius: 7pt;
-   background: #ccccff;
+   background: #3D8BFF;
    -webkit-flex: 1 6 20%;
            flex: 1 6 20%;
    -webkit-order: 1;
@@ -46,7 +46,7 @@ body {
    padding: 5px;
    border: 1px solid #8888bb;
    border-radius: 7pt;
-   background: #ccccff;
+   background: #3D8BFF;
    -webkit-flex: 1 6 20%;
            flex: 1 6 20%;
    -webkit-order: 3;
@@ -60,7 +60,7 @@ body {
    min-height: 100px;
    border: 1px solid #eebb55;
    border-radius: 7pt;
-   background: #ffeebb;
+   background: #3D8BFF;
    }
  
   /* Too narrow to support three columns */
