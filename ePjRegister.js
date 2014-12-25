@@ -1,24 +1,7 @@
-//function to store user name and password
-   function store(theForm) {
-    document.getElementById('welcomeMessage').innerHTML = "";
-    var inputUsername= theForm["username"];
-    var inputPassword= theForm["password"];
-    localStorage.setItem("username", inputUsername.value);
-    localStorage.setItem("password", inputPassword.value);
-    document.getElementById('welcomeMessage').innerHTML = "Welcome " + localStorage.getItem('username') + "!";
-    return false;
-   } // end store()
-//function to sign in
-   function login(theForm) {
-    document.getElementById('welcomeMessage').innerHTML = "";
-    var inputUsername = theForm["username"];
-    var inputPassword = theForm["password"];
-    var username = inputUsername.value;
-    var password = inputPassword.value;
-    if ((username == localStorage.getItem('username')) && (password == localStorage.getItem('password'))) {
-     document.getElementById('welcomeMessage').innerHTML = "Welcome " + localStorage.getItem('username') + "!";
-      } else {
-     document.getElementById('welcomeMessage').innerHTML = "Invalid Log-in!";
-    }
-    return false;
-   } // end login()
+var start = 1900;
+var end = new Date().getFullYear();
+var options = "";
+for(var year = start ; year <=end; year++){
+  options += "<option>"+ year +"</option>";
+}
+document.getElementById("bYear").innerHTML = options;
