@@ -44,23 +44,34 @@
         </div> -->
         <div>
           <form>
-            
+            	<section>
 	            <label for="user">User Name*</label>
 	            <input type="text" placeholder="Enter A User Name" id="registerUsername"/>
 	            <label for="pass">Password*</label>
 	            <input type="password" placeholder="Enter a Password" id="registerPassword" />
-	    
 	            <label for="email">Email Address*</label>
 	            <input type="email" placeholder="e.g. user@gmail.com" id="email"/>
-	    
+	            <label for="bday">Birth Date*</label>
+	            <select name="bday" id="bday">
+   			<option value="1">1</option>
+   			<option value="2">2</option>
+			<option value="3">3</option>
+   			<option value="4">4</option>
+   			<option value="5">5</option>
+   			<option value="6">6</option>
+   			<option value=""></option>
+   			<option value=""></option>
+   			</select>
+	    	</section>
+	    	<section>
+	            <label for="home">Home</label>
+	            <input type="text" name="home" id="home" />
 	            <label for="mobile">Mobile</label>
 	            <input type="text" name="mobile" id="mobile" />
-	            <label for="home">Home</label>
-	            <input type="text" name="work" id="work" />
-            
-  		    	<button onclick="addBook()">Add this book</button>
-  	    	</form>
-	    	</div>
+            	<section>
+  		    	<button onclick="addBook()">Join</button>
+  	   </form>
+	</div>
         <br />
         <div class="popup">
           <h2>Welcome Guest!</h2>
