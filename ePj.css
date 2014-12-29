@@ -152,3 +152,9 @@ body {
   color: #333333;
   text-decoration: none;
 }
+
+
+
+canvas{
+   border:1px solid red;
+}
