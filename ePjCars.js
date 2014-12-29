@@ -1,7 +1,10 @@
-function Car (licensePlate, transmissionType, carModel) {
+function Car (licensePlate, transmissionType, company, year, carModel, basePrice) {
 	this.licensePlate = licensePlate;
 	this.transmissionType = transmissionType;
+	this.company = company;
+	this.year = year;
 	this.carModel = carModel;
+	this.basePrice;
 };
 
 $(function(){
