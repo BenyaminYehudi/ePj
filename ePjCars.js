@@ -7,16 +7,16 @@ function Car (licensePlate, transmissionType, carModel) {
 $(function(){
 
 var picCount=0;  
-var picArray= ["https://images.hertz.com/vehicles/152x88/ZEILMCMR999.jpg",
-"https://images.hertz.com/vehicles/152x88/ZEILCCAR999.jpg",
-"https://images.hertz.com/vehicles/152x88/ZEILEDAR999.jpg",
-"https://images.hertz.com/vehicles/152x88/ZEILEDMR999.jpg",
-"https://images.hertz.com/vehicles/152x88/ZEILCDAR999.jpg",
-"https://images.hertz.com/vehicles/152x88/ZEILCDMR999.jpg",
-"https://images.hertz.com/vehicles/152x88/ZEILIDAH999.jpg",
-"https://images.hertz.com/vehicles/152x88/ZEILIDAR999.jpg",
-"https://images.hertz.com/vehicles/152x88/ZEILJDAR999.jpg",
-"https://images.hertz.com/vehicles/152x88/ZEILSDAR999.jpg"];
+var picArray= ["https://www.alamo.com/alamoData/vehicle/bookingCountries/US/CARS/ECAR.doi.320.high.imageSmallSideProfileNodePath.png/1408023566067.png",
+"https://www.alamo.com/alamoData/vehicle/bookingCountries/US/CARS/CCAR.doi.320.high.imageSmallSideProfileNodePath.png/1408023598583.png",
+"https://www.alamo.com/alamoData/vehicle/bookingCountries/US/CARS/CXAR.doi.320.high.imageSmallSideProfileNodePath.png/1408029275863.png",
+"https://www.alamo.com/alamoData/vehicle/bookingCountries/US/CARS/ICAR.doi.320.high.imageSmallSideProfileNodePath.png/1408023634360.png",
+"https://www.alamo.com/alamoData/vehicle/bookingCountries/US/CARS/SCAR.doi.320.high.imageSmallSideProfileNodePath.png/1408029330813.png",
+"https://www.alamo.com/alamoData/vehicle/bookingCountries/US/CARS/SCAH.doi.320.high.imageSmallSideProfileNodePath.png/1408023932839.png",
+"https://www.alamo.com/alamoData/vehicle/bookingCountries/US/CARS/FCAH.doi.320.high.imageSmallSideProfileNodePath.png/1408029477280.png",
+"https://www.alamo.com/alamoData/vehicle/bookingCountries/US/CARS/FCAR.doi.320.high.imageSmallSideProfileNodePath.png/1408029314915.png",
+"https://www.alamo.com/alamoData/vehicle/bookingCountries/US/CARS/FCDR.doi.320.high.imageSmallSideProfileNodePath.png/1408029356219.png",
+"https://www.alamo.com/alamoData/vehicle/bookingCountries/US/CARS/GXAR.doi.320.high.imageSmallSideProfileNodePath.png/1408029442186.png"];
     
     nextPic();
     
