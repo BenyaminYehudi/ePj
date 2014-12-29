@@ -83,6 +83,10 @@ body {
     max-height: 50px;
    }
   }
+  
+li {
+   list-style-type:none;
+}
 
 .logo {
    height:100px;
