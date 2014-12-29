@@ -4,7 +4,7 @@ function Car (licensePlate, transmissionType, company, year, carModel, basePrice
 	this.company = company;
 	this.year = year;
 	this.carModel = carModel;
-	this.basePrice;
+	this.basePrice = basePrice;
 };
 
 $(function(){
