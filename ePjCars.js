@@ -26,7 +26,7 @@ var picArray= ["https://www.alamo.com/alamoData/vehicle/bookingCountries/US/CARS
  function nextPic()
   {  picCount=(picCount+1<picArray.length)? picCount+1 : 0;
      var build='<img border="0" src="'+picArray[picCount]+
-     '" style="width:400px; height:200px;" />';
+     '" style="width:300px; height:200px;" />';
      document.getElementById("changingCars").innerHTML=build;
    setTimeout(function(){nextPic();},3000);
   }
