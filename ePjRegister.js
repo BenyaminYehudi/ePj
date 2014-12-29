@@ -1,3 +1,13 @@
+function UserRegistration (userName, password, email, birthDate, homePhone, mobilePhone, licenseNumber) {
+	this.userName = userName;
+	this.password = password;
+	this.email = email;
+	this.birthDate = new Date (year, month, day);
+	this.homePhone = homePhone;
+	this.mobilePhone = mobilePhone;
+	this.licenseNumber = licenseNumber;
+};
+
 $( document ).ready(function() {
 
 
@@ -12,3 +22,4 @@ document.getElementById("bYear").innerHTML = options;
 
 
 });
+
