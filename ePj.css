@@ -93,6 +93,10 @@ li {
    height:100px;
 }
 
+.imageContainer {
+   float:right;
+}
+
 .btn-primary {
   color: #ffffff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
