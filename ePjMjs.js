@@ -6,6 +6,6 @@ function footerYear() {
     document.getElementById("footerYear").innerHTML = n;
 }
 
-
+footerYear();
 
 });
