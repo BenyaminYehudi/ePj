@@ -23,7 +23,7 @@ function register(){
 	var userName = $("#registerUsername").val();
 	var password = $("#registerPassword").val();
 	var email= $("#email").val();
-	var bDay= $("#bDay).val();
+	var bDay= $("#bDay").val();
 	var bMonth= $("#bMonth").val();
 	var bYear= $("#bYear").val();
 	var homePhone= $("#home").val();
