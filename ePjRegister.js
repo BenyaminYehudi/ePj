@@ -1,10 +1,10 @@
 $( document ).ready(function() {
 	
-function UserRegistration (userName, password, email, birthDate, homePhone, mobilePhone, licenseNumber) {
+function User (userName, password, email, birthDate, homePhone, mobilePhone, licenseNumber) {
 	this.userName = userName;
 	this.password = password;
 	this.email = email;
-	this.birthDate = new Date (year, month, day);
+	this.bDate = bDate;
 	this.homePhone = homePhone;
 	this.mobilePhone = mobilePhone;
 	this.licenseNumber = licenseNumber;
