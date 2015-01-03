@@ -32,7 +32,6 @@ function register(){
 	var mobilePhone= $("#mobile").val();
 	var drivingLicense= $("#license").val();
 	var bDate = new Date(bYear, bMonth, bDay);
-	console.log(bDate);
 	var newUser = new User (userName, password, email, bDate, homePhone, mobilePhone, drivingLicense);
-	console.log(newUser);
+	localStorage.setItem("user", JSON.stringify(newUser));
 }
