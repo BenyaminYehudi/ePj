@@ -35,3 +35,9 @@ function register(){
 	var newUser = new User (userName, password, email, bDate, homePhone, mobilePhone, drivingLicense);
 	localStorage.setItem("user", JSON.stringify(newUser));
 }
+
+function refreshed(){
+	var a = localStorage.getItem("user");
+	a = JSON.parse(a);
+	$("# registerUsername").val(a.userName);
+}
