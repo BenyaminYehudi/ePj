@@ -11,14 +11,14 @@ document.getElementById("bYear").innerHTML = options;
 });
 
 	
-function User (userName, password, email, birthDate, homePhone, mobilePhone, licenseNumber) {
+function User (userName, password, email, bDate, homePhone, mobilePhone, drivingLicense) {
 	this.userName = userName;
 	this.password = password;
 	this.email = email;
 	this.bDate = bDate;
 	this.homePhone = homePhone;
 	this.mobilePhone = mobilePhone;
-	this.licenseNumber = licenseNumber;
+	this.drivingLicense = drivingLicense;
 };
 
 function register(){
