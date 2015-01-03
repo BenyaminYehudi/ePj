@@ -43,5 +43,5 @@ function register(){
 function refreshed(){
 	var a = localStorage.getItem("user");
 	a = JSON.parse(a);
-	$("# registerUsername").val(a.userName);
+	$("#registerUsername").val(a.userName);
 }
