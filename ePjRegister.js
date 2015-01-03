@@ -8,7 +8,7 @@ for(var year = start ; year <=end; year++){
 }
 document.getElementById("bYear").innerHTML = options;
 
-if (localStorage.getItem("user") !== null {
+if (localStorage.getItem("user") !== null) {
 refreshed();
 }
 
