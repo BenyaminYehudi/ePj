@@ -1,4 +1,15 @@
 $( document ).ready(function() {
+
+var start = 1900;
+var end = new Date().getFullYear();
+var options = "";
+for(var year = start ; year <=end; year++){
+  options += "<option>"+ year +"</option>";
+}
+document.getElementById("bYear").innerHTML = options;
+
+});
+
 	
 function User (userName, password, email, birthDate, homePhone, mobilePhone, licenseNumber) {
 	this.userName = userName;
@@ -9,15 +20,6 @@ function User (userName, password, email, birthDate, homePhone, mobilePhone, lic
 	this.mobilePhone = mobilePhone;
 	this.licenseNumber = licenseNumber;
 };
-
-
-var start = 1900;
-var end = new Date().getFullYear();
-var options = "";
-for(var year = start ; year <=end; year++){
-  options += "<option>"+ year +"</option>";
-}
-document.getElementById("bYear").innerHTML = options;
 
 function register(){
 	var userName = $("#registerUsername").val();
@@ -33,5 +35,3 @@ function register(){
 	var newUser = new User (userName, password, email, bDate, homePhone, mobilePhone, drivingLicense);
 	console.log(newUser)
 }
-
-});
