@@ -31,6 +31,7 @@ function register(){
 	var drivingLicense= $("#license").val();
 	var bDate = new Date(bYear, bMonth, bDay);
 	var newUser = new User (userName, password, email, bDate, homePhone, mobilePhone, drivingLicense);
+	console.log(newUser)
 }
 
 });
