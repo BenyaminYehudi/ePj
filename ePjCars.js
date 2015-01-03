@@ -1,3 +1,5 @@
+$( document ).ready(function() {
+	
 function Car (licensePlate, transmissionType, company, year, carModel, basePrice) {
 	this.licensePlate = licensePlate;
 	this.transmissionType = transmissionType;
@@ -30,4 +32,8 @@ var imgArray= ["https://www.alamo.com/alamoData/vehicle/bookingCountries/US/CARS
      document.getElementById("changingCars").innerHTML=newImage;
    setTimeout(function(){nextImage();},3000);
   }
+});
+
+
+
 });
