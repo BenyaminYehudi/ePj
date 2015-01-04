@@ -1,4 +1,8 @@
 function carReturn(){
   var licensePlate = $("#returnCarLicense").val();
-  console.log(licensePlate);
+  var rentedCars = JSON.parse(localStorage.getItem("rentedCars"));
+  console.log(rentedCars);
+  /*if (){
+    
+  }*/
 };
