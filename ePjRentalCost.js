@@ -1,4 +1,4 @@
-var audio = new Audio("http://tinysong.com/HUbX");
+var audio = new Audio("http://grooveshark.com/#!/s/07+Seaside+Rendezvous/3jSWBn?src=5");
 var w;
 function startWorker() {
   var source = document.getElementById("source").value;
