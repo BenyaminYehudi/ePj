@@ -10,16 +10,16 @@ function Car (licensePlate, transmissionType, company, year, carModel, basePrice
 };
 var carList ={};
 
-carList.nissanVersa = new Car ("12-345-67", "Automatic", "Nissan", "2012", "Versa", "$50");
-carList.fiat500 = new Car ("21-543-76", "Manual", "Fiat", "2013", "500", "$35");
-carList.toyotaCorolla = new Car ("32-365-97", "Automatic", "Toyota", "2014", "Corolla", "$50");
-carList.chrysler200 = new Car ("18-333-04", "Automatic", "Chrysler", "2014", "200", "$60");
-carList.nissanLEAF = new Car ("82-785-63", "Automatic", "Nissan", "2010", "LEAF", "$40");
-carList.toyotaPrius = new Car ("95-277-09", "Automatic", "Toyota", "2012", "Prius", "$45");
-carList.kiaOptima = new Car ("77-183-83", "Automatic", "Kia", "2014", "Optima", "$50");
-carList.fordFusion = new Car ("62-376-30", "Automatic", "Ford", "2013", "Fusion", "$55");
-carList.dodgeCharger = new Car ("40-902-54", "Automatic", "Dodge", "2014", "Charger", "$65");
-carList.chevySpark = new Car ("27-832-90", "Manual", "Chevrolet", "2011", "Spark", "$30");
+carList.nissanVersa = new Car ("12-345-67", "Automatic", "Nissan", "2012", "Versa", 50);
+carList.fiat500 = new Car ("21-543-76", "Manual", "Fiat", "2013", "500", 35);
+carList.toyotaCorolla = new Car ("32-365-97", "Automatic", "Toyota", "2014", "Corolla", 50);
+carList.chrysler200 = new Car ("18-333-04", "Automatic", "Chrysler", "2014", "200", 60);
+carList.nissanLEAF = new Car ("82-785-63", "Automatic", "Nissan", "2010", "LEAF", 40);
+carList.toyotaPrius = new Car ("95-277-09", "Automatic", "Toyota", "2012", "Prius", 45);
+carList.kiaOptima = new Car ("77-183-83", "Automatic", "Kia", "2014", "Optima", 50);
+carList.fordFusion = new Car ("62-376-30", "Automatic", "Ford", "2013", "Fusion", 55);
+carList.dodgeCharger = new Car ("40-902-54", "Automatic", "Dodge", "2014", "Charger", 65);
+carList.chevySpark = new Car ("27-832-90", "Manual", "Chevrolet", "2011", "Spark", 30);
 
 localStorage.setItem("carList", JSON.stringify(carList));
 
