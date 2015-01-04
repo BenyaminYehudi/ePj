@@ -5,6 +5,7 @@ function startWorker() {
   var destination = document.getElementById("destination").value;
   var selectedCar = localStorage.getItem("selectedCar");
   var carList = localStorage.getItem("carList");
+  carList = JSON.parse(carList);
   console.log(selectedCar, carList);
   selectedCar= carList[selectedCar];
   console.log(selectedCar);
