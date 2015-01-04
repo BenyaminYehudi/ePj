@@ -31,9 +31,9 @@ var distances = {
     "Haifa":428}
 };
 
-function calculate(){
-  
-  postMessage(summat);
+onmessage = function(route) {
+  console.log('Message received from main script', route);
+  /*postMessage(summat);*/
 }
 
 calculate();
