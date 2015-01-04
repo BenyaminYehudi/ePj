@@ -31,10 +31,10 @@ var distances = {
     "Haifa":428}
 };
 
+var cost = 0;
 onmessage = function(route) {
   console.log('Message received from main script', route);
   var distance = distances[route.data.source][route.data.destination];
-  var cost = 0;
     if (distance<=90){
       cost = distance*1.2;
     } else {
