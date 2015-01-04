@@ -35,7 +35,7 @@ function showCar(carId){
 	carDetails= carDetails+"<li>Model: "+carList[carId].carModel+"</li>";
 	carDetails= carDetails+"<li>Base Price: "+carList[carId].basePrice+"</li>";
 	carDetails= carDetails+"</ul>";
-	carDetails= carDetails+"<button onclick='order(\""+carId+"\")'>Order</button>";
+	carDetails= carDetails+"<button class='btn btn-primary' onclick='proceed(\""+carId+"\")'>Proceed</button>";
 	$("#carDetails").html(carDetails);
 };
 
@@ -69,8 +69,7 @@ var imgArray= ["https://www.alamo.com/alamoData/vehicle/bookingCountries/US/CARS
 });
 
 
-function order(carId){
-	console.log("carId", carId);
+function proceed(carId){
 	localStorage.setItem("selectedCar", carId);
 	window.location="ePjRentalCost.html";
 };
