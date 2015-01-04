@@ -28,7 +28,8 @@ $("li button").on("click", function(){
 });
 
 function showCar(carId){
-	var carDetails = "<h2>"+carList[carId].licensePlate+"</h2>"
+	var carDetails = "<h2>"+carList[carId].licensePlate+"</h2>";
+	carDetails= carDetails+"<h2>"+carList[carId].transmissionType+"</h2>"
 	$("#carDetails").html(carDetails);
 };
 
