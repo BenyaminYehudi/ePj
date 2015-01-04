@@ -8,6 +8,30 @@ function Car (licensePlate, transmissionType, company, year, carModel, basePrice
 	this.carModel = carModel;
 	this.basePrice = basePrice;
 };
+var carList ={};
+
+<button id="chevySpark" class="btn btn-primary">Chevy Spark</button></li>
+        <li><button id="nissanVersa" class="btn btn-primary">Nissan Versa</button></li>
+        <li><button id="fiat500" class="btn btn-primary">Fiat 500</button></li>
+        <li><button id="toyotaCorolla" class="btn btn-primary">Toyota Corolla</button></li>
+        <li><button id="chrysler200" class="btn btn-primary">Chrysler 200</button></li>
+        <li><button id="nissanLEAF" class="btn btn-primary">Nissan LEAF</button></li>
+        <li><button id="toyotaPrius" class="btn btn-primary">Toyota Prius</button></li>
+        <li><button id="kiaOptima" class="btn btn-primary">Kia Optima</button></li>
+        <li><button id="fordFusion" class="btn btn-primary">Ford Fusion</button></li>
+        <li><button id="dodgeCharger" class="btn btn-primary">Dodge Charger</button></li>
+
+carList.chevySpark = new Car ("27-832-90", "Manual", "Chevrolet", "2011", "Spark", "$30");
+carList.nissanVersa = new Car ("12-345-67", "Automatic", "Nissan", "2012", "Versa", "$50");
+carList.fiat500 = new Car ("21-543-76", "Automatic", "Fiat", "2013", "500", "$45");
+carList.toyotaCorolla = new Car ("32-365-97", "Automatic", "", "20", "", "$0");
+carList.chrysler200 = new Car ("18-333-04", "Automatic", "", "20", "", "$0");
+carList.nissanLEAF = new Car ("82-785-63", "Automatic", "", "20", "", "$0");
+carList.toyotaPrius = new Car ("95-277-09", "Automatic", "", "20", "", "$0");
+carList.kiaOptima = new Car ("77-183-83", "Automatic", "", "20", "", "$0");
+carList.fordFusion = new Car ("62-376-30", "Automatic", "", "20", "", "$0");
+carList.dodgeCharger = new Car ("40-902-54", "Automatic", "", "20", "", "$0");
+
 
 $("li button").on("click", function(){
 	console.log(this.id);
@@ -21,7 +45,8 @@ function showCar(carId){
 $(function(){
 
 var imgCount=0;  
-var imgArray= ["https://www.alamo.com/alamoData/vehicle/bookingCountries/US/CARS/ECAR.doi.320.high.imageSmallSideProfileNodePath.png/1408023566067.png",
+var imgArray= ["https://www.alamo.com/alamoData/vehicle/bookingCountries/US/CARS/GXAR.doi.320.high.imageSmallSideProfileNodePath.png/1408029442186.png",
+"https://www.alamo.com/alamoData/vehicle/bookingCountries/US/CARS/ECAR.doi.320.high.imageSmallSideProfileNodePath.png/1408023566067.png",
 "https://www.alamo.com/alamoData/vehicle/bookingCountries/US/CARS/CCAR.doi.320.high.imageSmallSideProfileNodePath.png/1408023598583.png",
 "https://www.alamo.com/alamoData/vehicle/bookingCountries/US/CARS/CXAR.doi.320.high.imageSmallSideProfileNodePath.png/1408029275863.png",
 "https://www.alamo.com/alamoData/vehicle/bookingCountries/US/CARS/ICAR.doi.320.high.imageSmallSideProfileNodePath.png/1408023634360.png",
@@ -29,8 +54,7 @@ var imgArray= ["https://www.alamo.com/alamoData/vehicle/bookingCountries/US/CARS
 "https://www.alamo.com/alamoData/vehicle/bookingCountries/US/CARS/SCAH.doi.320.high.imageSmallSideProfileNodePath.png/1408023932839.png",
 "https://www.alamo.com/alamoData/vehicle/bookingCountries/US/CARS/FCAH.doi.320.high.imageSmallSideProfileNodePath.png/1408029477280.png",
 "https://www.alamo.com/alamoData/vehicle/bookingCountries/US/CARS/FCAR.doi.320.high.imageSmallSideProfileNodePath.png/1408029314915.png",
-"https://www.alamo.com/alamoData/vehicle/bookingCountries/US/CARS/FCDR.doi.320.high.imageSmallSideProfileNodePath.png/1408029356219.png",
-"https://www.alamo.com/alamoData/vehicle/bookingCountries/US/CARS/GXAR.doi.320.high.imageSmallSideProfileNodePath.png/1408029442186.png"];
+"https://www.alamo.com/alamoData/vehicle/bookingCountries/US/CARS/FCDR.doi.320.high.imageSmallSideProfileNodePath.png/1408029356219.png"];
     
     nextImage();
     
