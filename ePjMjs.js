@@ -24,3 +24,9 @@ function login(){
         localStorage.setItem("loggedIn", false);
     }
 }
+
+function checkIfLogged(){
+    if(localStorage.getItem("loggedIn")==="true"){
+        $("#loginDiv").html('<button class="btn btn-primary" onclick="logOut()">Log Out</button>');        
+    }
+}
