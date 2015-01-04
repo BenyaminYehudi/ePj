@@ -17,7 +17,7 @@ function startWorker() {
             w.postMessage(route);
         }
         w.onmessage = function(event) {
-            document.getElementById("result").innerHTML = "The cost to rent the car will be $"+event.data+" <button class=\"btn btn-primary\" onclick=\"confirmOrder()\">Confirm</button>";
+            document.getElementById("result").innerHTML = "The cost to rent the"+selectedCar+"will be $"+event.data+" <button class=\"btn btn-primary\" onclick=\"confirmOrder()\">Confirm</button>";
             stopWorker();
         };
     } else {
