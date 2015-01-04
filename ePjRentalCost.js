@@ -32,5 +32,5 @@ function stopWorker() {
 
 function confirmOrder(){
   delete carList[selectedCar];
-  console.log(carList);
+  localStorage.setItem("carList", JSON.stringify(carList));
 };
