@@ -16,5 +16,5 @@ function login(){
     a = JSON.parse(a);
     var lclStrgUser = a.userName;
     var lclStrgPass = a.password;
-    if()
+    /*if()*/
 }
