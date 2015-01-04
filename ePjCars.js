@@ -11,11 +11,11 @@ function Car (licensePlate, transmissionType, company, year, carModel, basePrice
 
 $("li button").on("click", function(){
 	console.log(this.id);
-	showCar();
+	showCar(this.id);
 });
 
-function showCar(){
-	$("#carDetails").html("works so far?");	
+function showCar(carId){
+	$("#carDetails").html(carId);	
 };
 
 $(function(){
