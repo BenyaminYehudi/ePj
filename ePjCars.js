@@ -9,6 +9,14 @@ function Car (licensePlate, transmissionType, company, year, carModel, basePrice
 	this.basePrice = basePrice;
 };
 
+$("li button").on("click", function(){
+	showCar();
+});
+
+function showCar(){
+	$("#carDetails").html("works so far?");	
+};
+
 $(function(){
 
 var imgCount=0;  
