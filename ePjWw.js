@@ -33,5 +33,5 @@ var distances = {
 
 onmessage = function(route) {
   console.log('Message received from main script', route);
-  postMessage(route);
+  postMessage(route.data.destination);
 }
