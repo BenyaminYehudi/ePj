@@ -1,3 +1,4 @@
+var audio = new Audio("http://tinysong.com/HUbX");
 var w;
 function startWorker() {
   var source = document.getElementById("source").value;
@@ -6,6 +7,7 @@ function startWorker() {
     if(typeof(Worker) !== "undefined") {
         if(typeof(w) == "undefined") {
             w = new Worker("ePjWw.js");
+            audio.play();
             w.postMessage(route);
         }
         w.onmessage = function(event) {
@@ -17,6 +19,7 @@ function startWorker() {
     }
 }
 function stopWorker() { 
+    audio.pause();
     w.terminate();
     w = undefined;
 }
