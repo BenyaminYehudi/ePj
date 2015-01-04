@@ -33,4 +33,5 @@ function checkIfLogged(){
 
 function logOut(){
     localStorage.setItem("loggedIn", false);
+    window.location="/";
 };
