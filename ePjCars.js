@@ -36,8 +36,12 @@ function showCar(carId){
 	carDetails= carDetails+"<li>Model: "+carList[carId].carModel+"</li>";
 	carDetails= carDetails+"<li>Base Price: "+carList[carId].basePrice+"</li>";
 	carDetails= carDetails+"</ul>";
-	carDetails= carDetails+"<button onclick='order()'>Order</button>";
+	carDetails= carDetails+"<button onclick='order("+carId+")'>Order</button>";
 	$("#carDetails").html(carDetails);
+};
+
+function order(carId){
+	console.log(carId);
 };
 
 $(function(){
