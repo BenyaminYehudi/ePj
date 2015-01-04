@@ -20,6 +20,7 @@ function login(){
     var lclStrgPass = a.password;
     if(usrLog===lclStrgUser && pswLog===lclStrgPass){
         localStorage.setItem("loggedIn", true);
+        checkIfLogged();
     } else {
         localStorage.setItem("loggedIn", false);
     }
