@@ -100,6 +100,7 @@ li {
 .btn-primary {
   color: #ffffff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  margin: 5px;
   background-color: #006dcc;
   *background-color: #0044cc;
   background-image: -moz-linear-gradient(top, #0088cc, #0044cc);
