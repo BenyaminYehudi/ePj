@@ -1,4 +1,4 @@
 function returnCar(){
-  var license = $("#returnCarLicense").val;
-  console.log(license);
+  var licensePlate = $("#returnCarLicense").val;
+  console.log(licensePlate);
 };
