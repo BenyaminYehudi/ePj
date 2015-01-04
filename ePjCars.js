@@ -24,7 +24,6 @@ carList.chevySpark = new Car ("27-832-90", "Manual", "Chevrolet", "2011", "Spark
 localStorage.setItem("carList", JSON.stringify(carList));
 
 $("li button").on("click", function(){
-	console.log(this.id);
 	showCar(this.id);
 });
 
@@ -41,7 +40,7 @@ function showCar(carId){
 };
 
 function order(carId){
-	console.log(carId);
+	console.log("carId", carId);
 };
 
 $(function(){
