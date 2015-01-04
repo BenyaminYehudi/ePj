@@ -8,7 +8,7 @@ function startWorker() {
         if(typeof(w) == "undefined") {
             w = new Worker("ePjWw.js");
             audio.play();
-            document.getElementById("result").innerHTML = "<img src='http://rpg.drivethrustuff.com/shared_images/ajax-loader.gif'/>";
+            document.getElementById("result").innerHTML = "<img src='http://www.mytreedb.com/uploads/mytreedb/loader/ajax_loader_blue_128.gif'/>";
             w.postMessage(route);
         }
         w.onmessage = function(event) {
