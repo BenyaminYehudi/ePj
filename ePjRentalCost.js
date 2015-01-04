@@ -3,7 +3,8 @@ var w;
 function startWorker() {
   var source = document.getElementById("source").value;
   var destination = document.getElementById("destination").value;
-  var route = {source:source, destination:destination};
+  var selectedCar = localStorage.getItem("selectedCar");
+  var route = {source:source, destination:destination, selectedCar:selectedCar};
     if(typeof(Worker) !== "undefined") {
         if(typeof(w) == "undefined") {
             w = new Worker("ePjWw.js");
