@@ -29,5 +29,5 @@ var distances = {
 function calculate(){
   var source = $("#source").val();
   var destination = $("#destination").val();
-  
+  console.log(distances[source][destination]);
 }
