@@ -10,17 +10,6 @@ function Car (licensePlate, transmissionType, company, year, carModel, basePrice
 };
 var carList ={};
 
-<button id="chevySpark" class="btn btn-primary">Chevy Spark</button></li>
-        <li><button id="nissanVersa" class="btn btn-primary">Nissan Versa</button></li>
-        <li><button id="fiat500" class="btn btn-primary">Fiat 500</button></li>
-        <li><button id="toyotaCorolla" class="btn btn-primary">Toyota Corolla</button></li>
-        <li><button id="chrysler200" class="btn btn-primary">Chrysler 200</button></li>
-        <li><button id="nissanLEAF" class="btn btn-primary">Nissan LEAF</button></li>
-        <li><button id="toyotaPrius" class="btn btn-primary">Toyota Prius</button></li>
-        <li><button id="kiaOptima" class="btn btn-primary">Kia Optima</button></li>
-        <li><button id="fordFusion" class="btn btn-primary">Ford Fusion</button></li>
-        <li><button id="dodgeCharger" class="btn btn-primary">Dodge Charger</button></li>
-
 carList.chevySpark = new Car ("27-832-90", "Manual", "Chevrolet", "2011", "Spark", "$30");
 carList.nissanVersa = new Car ("12-345-67", "Automatic", "Nissan", "2012", "Versa", "$50");
 carList.fiat500 = new Car ("21-543-76", "Automatic", "Fiat", "2013", "500", "$45");
