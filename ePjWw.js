@@ -38,7 +38,9 @@ onmessage = function(route) {
     if (distance<=90){
       cost = distance*1.2;
     } else {
-      cost = distance*0.9;
+      var uptoNinety = distance*1.2;
+      var aboveNinety = distance-90;
+      cost = (aboveNinety*0.9)+(uptoNinety);
     }
   postMessage(cost);
 }
