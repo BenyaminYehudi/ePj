@@ -48,8 +48,8 @@ function refreshed(){
 	$("#email").val(a.email);
 /*	$("#bDay").val(a.bDate.getDate());
 	$("#bMonth").val(a.bDate.getMonth());
-*/	$("#bYear").val(a.bDate.getFullYear());
-	$("#home").val(a.homePhone);
+	$("#bYear").val(a.bDate.getFullYear());
+*/	$("#home").val(a.homePhone);
 	$("#mobile").val(a.mobilePhone);
 	$("#license").val(a.drivingLicense);
 }
