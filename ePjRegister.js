@@ -44,4 +44,12 @@ function refreshed(){
 	var a = localStorage.getItem("user");
 	a = JSON.parse(a);
 	$("#registerUsername").val(a.userName);
+	$("#registerPassword").val(.password);
+	$("#email").val(.email);
+	$("#").val(.);
+	$("#").val(.);
+	$("#").val(.);
+	$("#home").val(.homePhone);
+	$("#mobile").val(.mobilePhone);
+	$("#license").val(.drivingLicense);
 }
