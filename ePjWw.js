@@ -33,8 +33,6 @@ var distances = {
 
 var cost = 0;
 onmessage = function(route) {
-  console.log("car", localStorage.getItem("selectedCar"));
-  
   var distance = distances[route.data.source][route.data.destination];
     if (distance<=90){
       cost = distance*1.2;
