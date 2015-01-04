@@ -28,10 +28,8 @@ $("li button").on("click", function(){
 });
 
 function showCar(carId){
-	$("#carDetails").html(carList[carId].basePrice);
-	$("#carDetails").html(carList[carId].basePrice);
-	$("#carDetails").html(carList[carId].basePrice);
-	$("#carDetails").html(carList[carId].basePrice);
+	var carDetails = "<h2>"+carList[carId].licensePlate+"</h2>"
+	$("#carDetails").html(carDetails);
 };
 
 $(function(){
