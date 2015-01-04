@@ -46,9 +46,9 @@ function refreshed(){
 	$("#registerUsername").val(a.userName);
 	$("#registerPassword").val(a.password);
 	$("#email").val(a.email);
+	/* $("#").val(a.);
 	$("#").val(a.);
-	$("#").val(a.);
-	$("#").val(a.);
+	$("#").val(a.); */
 	$("#home").val(a.homePhone);
 	$("#mobile").val(a.mobilePhone);
 	$("#license").val(a.drivingLicense);
