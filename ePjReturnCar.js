@@ -8,7 +8,8 @@ function carReturn(){
     localStorage.setItem("carList", JSON.stringify(carList));
     delete rentedCars[licensePlate];
     localStorage.setItem("rentedCars", JSON.stringify(rentedCars));
+    document.getElementById("result").innerHTML = "The car has been returned successfully!";
   } else {
-    console.log("it doesn't exist");
+    document.getElementById("result").innerHTML = "There is no such vehicle in our fleet. Please check the license number and try again";
   }
 };
