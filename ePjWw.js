@@ -1,8 +1,7 @@
-var i= 0;
-
-function multiplesOfNothing() {
-    
-    
+function calculate(){
+  var source = $("#source").val();
+  var destination = $("#destination").val();
+  postMessage(distances[source][destination]);
 }
 
-multiplesOfSeven();
+calculate();
