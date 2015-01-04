@@ -28,7 +28,7 @@ $("li button").on("click", function(){
 });
 
 function showCar(carId){
-	$("#carDetails").html(carId);	
+	$("#carDetails").html(carList[carId].basePrice);	
 };
 
 $(function(){
