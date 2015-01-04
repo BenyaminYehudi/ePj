@@ -49,5 +49,6 @@ onmessage = function(route) {
     var tenPercent = cost/100*10;
     cost = cost-tenPercent;
     }
+    cost = cost.toFixed(2)
     setTimeout("postMessage(cost)",9000);
 }
