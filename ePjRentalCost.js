@@ -12,7 +12,7 @@ function startWorker() {
             w.postMessage(route);
         }
         w.onmessage = function(event) {
-            document.getElementById("result").innerHTML = event.data;
+            document.getElementById("result").innerHTML = "The cost to rent the car will be $"+event.data+"<button class=\"btn btn-primary\" onclick=\"confirm()\">Confirm</button>";
             stopWorker();
         };
     } else {
