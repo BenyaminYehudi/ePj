@@ -33,7 +33,7 @@ function stopWorker() {
 function confirmOrder(){
   var theCar = carList[selectedCar];
   var rentedCars = {};
-  rentedCars[selectedCar.licensePlate] = theCar;
+  rentedCars[theCar.licensePlate] = theCar;
   console.log(rentedCars);
   localStorage.setItem("rentedCars", JSON.stringify(rentedCars));
   delete carList[selectedCar];
