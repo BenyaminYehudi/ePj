@@ -46,8 +46,8 @@ function refreshed(){
 	$("#registerUsername").val(a.userName);
 	$("#registerPassword").val(a.password);
 	$("#email").val(a.email);
-	$("#bDay").val(a.bDate.getDate());
-	$("#bMonth").val(a.bDate.getMonth());
+/*	$("#bDay").val(a.bDate.getDate());
+*/	$("#bMonth").val(a.bDate.getMonth());
 	$("#bYear").val(a.bDate.getFullYear());
 	$("#home").val(a.homePhone);
 	$("#mobile").val(a.mobilePhone);
