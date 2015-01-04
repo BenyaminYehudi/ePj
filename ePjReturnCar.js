@@ -3,7 +3,9 @@ function carReturn(){
   var rentedCars = JSON.parse(localStorage.getItem("rentedCars"));
   console.log(rentedCars);
   if (rentedCars[licensePlate] !== undefined){
-    console.log("it exists");
+    var carList = JSON.parse(localStorage.getItem("carList"));
+    carList[licensePlate]=rentedCars[licensePlate];
+    localStorage.setItem("carList", JSON.stringify(carList));
   } else {
     console.log("it doesn't exist");
   }
