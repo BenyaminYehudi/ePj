@@ -21,6 +21,7 @@ carList.fordFusion = new Car ("62-376-30", "Automatic", "Ford", "2013", "Fusion"
 carList.dodgeCharger = new Car ("40-902-54", "Automatic", "Dodge", "2014", "Charger", "$65");
 carList.chevySpark = new Car ("27-832-90", "Manual", "Chevrolet", "2011", "Spark", "$30");
 
+localStorage.setItem("carList", JSON.stringify(carList));
 
 $("li button").on("click", function(){
 	console.log(this.id);
