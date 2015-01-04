@@ -4,6 +4,8 @@ function startWorker() {
   var source = document.getElementById("source").value;
   var destination = document.getElementById("destination").value;
   var selectedCar = localStorage.getItem("selectedCar");
+  var carList = localStorage.getItem("carList");
+  selectedCar= carList[selectedCar];
   var route = {source:source, destination:destination, selectedCar:selectedCar};
     if(typeof(Worker) !== "undefined") {
         if(typeof(w) == "undefined") {
