@@ -42,5 +42,5 @@ onmessage = function(route) {
       var aboveNinety = distance-90;
       cost = (aboveNinety*0.9)+(uptoNinety);
     }
-  postMessage(cost);
+    setTimeout("postMessage(cost)",10000);
 }
