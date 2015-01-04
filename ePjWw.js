@@ -34,6 +34,7 @@ var distances = {
 var cost = 0;
 onmessage = function(route) {
   var distance = distances[route.data.source][route.data.destination];
+  var basePrice = route.data.selectedCar["basePrice"];
   console.log(route.data.selectedCar);
     if (distance<=90){
       cost = distance*1.2;
@@ -42,5 +43,6 @@ onmessage = function(route) {
       var aboveNinety = distance-90;
       cost = (aboveNinety*0.9)+(uptoNinety);
     }
+    cost = cost+basePrice
     setTimeout("postMessage(cost)",9000);
 }
