@@ -6,6 +6,7 @@ function carReturn(){
     var carList = JSON.parse(localStorage.getItem("carList"));
     carList[licensePlate]=rentedCars[licensePlate];
     localStorage.setItem("carList", JSON.stringify(carList));
+    delete rentedCars[licensePlate];
   } else {
     console.log("it doesn't exist");
   }
