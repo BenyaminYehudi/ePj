@@ -5,7 +5,7 @@ function startWorker() {
   var destination = document.getElementById("destination").value;
   var selectedCar = localStorage.getItem("selectedCar");
   var carList = localStorage.getItem("carList");
-  console.log(selectedCar);
+  console.log(selectedCar, carList);
   selectedCar= carList[selectedCar];
   console.log(selectedCar);
   var route = {source:source, destination:destination, selectedCar:selectedCar};
