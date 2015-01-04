@@ -31,8 +31,20 @@ var distances = {
     "Haifa":428}
 };
 
-function calculate(){
-  var source = $("#source").val();
-  var destination = $("#destination").val();
-  console.log(distances[source][destination]);
+var w;
+function startWorker() {
+    if(typeof(Worker) !== "undefined") {
+        if(typeof(w) == "undefined") {
+            w = new Worker("ePjWw.js");
+        }
+        w.onmessage = function(event) {
+            document.getElementById("result").innerHTML = event.data;
+        };
+    } else {
+        document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Workers...";
+    }
+}
+function stopWorker() { 
+    w.terminate();
+    w = undefined;
 }
