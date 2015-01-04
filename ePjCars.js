@@ -10,7 +10,7 @@ function Car (licensePlate, transmissionType, company, year, carModel, basePrice
 };
 
 $("li button").on("click", function(){
-	console.log(this);
+	console.log(this.id);
 	showCar();
 });
 
