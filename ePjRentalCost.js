@@ -26,6 +26,8 @@ var distances = {
     "Haifa":428}
 };
 
-function(){
-
+function calculate(){
+  var source = $("#source").val();
+  var destination = $("#destination").val();
+  
 }
