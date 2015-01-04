@@ -23,10 +23,14 @@ function login(){
     } else {
         localStorage.setItem("loggedIn", false);
     }
-}
+};
 
 function checkIfLogged(){
     if(localStorage.getItem("loggedIn")==="true"){
         $("#loginDiv").html('<button class="btn btn-primary" onclick="logOut()">Log Out</button>');        
     }
-}
+};
+
+function logOut(){
+    localStorage.setItem("loggedIn", false);
+};
