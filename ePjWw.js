@@ -35,6 +35,7 @@ var cost = 0;
 onmessage = function(route) {
   var distance = distances[route.data.source][route.data.destination];
   var basePrice = route.data.selectedCar["basePrice"];
+  var transmissionType = route.data.selectedCar["transmissionType"];
   console.log(route.data.selectedCar);
     if (distance<=90){
       cost = distance*1.2;
@@ -44,7 +45,9 @@ onmessage = function(route) {
       cost = (aboveNinety*0.9)+(uptoNinety);
     }
     cost = cost+basePrice;
+    if(transmissionType==="Manual"){
     var tenPercent = cost/100*10;
     cost = cost-tenPercent;
+    }
     setTimeout("postMessage(cost)",9000);
 }
