@@ -72,5 +72,5 @@ var imgArray= ["https://www.alamo.com/alamoData/vehicle/bookingCountries/US/CARS
 function order(carId){
 	console.log("carId", carId);
 	localStorage.setItem("selectedCar", carId);
-	window.location=url"ePjRentalCost.html";
+	window.location="ePjRentalCost.html";
 };
