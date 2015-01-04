@@ -33,7 +33,5 @@ var distances = {
 
 onmessage = function(route) {
   console.log('Message received from main script', route);
-  /*postMessage(summat);*/
+  postMessage(route);
 }
-
-calculate();
