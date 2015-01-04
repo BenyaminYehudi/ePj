@@ -10,6 +10,7 @@ function startWorker() {
         }
         w.onmessage = function(event) {
             document.getElementById("result").innerHTML = event.data;
+            stopWorker();
         };
     } else {
         document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Workers...";
