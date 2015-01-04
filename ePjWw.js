@@ -34,7 +34,7 @@ var distances = {
 var cost = 0;
 onmessage = function(route) {
   var distance = distances[route.data.source][route.data.destination];
-  console.log(route.data.selectedCar);
+  console.log(route.data);
     if (distance<=90){
       cost = distance*1.2;
     } else {
