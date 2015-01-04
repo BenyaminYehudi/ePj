@@ -1,4 +1,4 @@
-var audio = new Audio("http://grooveshark.com/#!/s/07+Seaside+Rendezvous/3jSWBn?src=5");
+var audio = new Audio("http://s1download-universal-soundbank.com/mp3/sounds/5838.mp3");
 var w;
 function startWorker() {
   var source = document.getElementById("source").value;
