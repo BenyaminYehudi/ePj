@@ -37,5 +37,4 @@ function confirmOrder(){
   localStorage.setItem("rentedCars", JSON.stringify(rentedCars));
   delete carList[selectedCar];
   localStorage.setItem("carList", JSON.stringify(carList));
-  alert("Thank you for renting from JB Rental");
 };
