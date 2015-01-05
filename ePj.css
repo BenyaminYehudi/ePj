@@ -85,6 +85,10 @@ body {
    }
   }
   
+#loginDiv{
+   float: right;
+}
+  
 li {
    list-style-type:none;
 }
@@ -92,6 +96,7 @@ li {
 .logo {
    width:100px;
    height:100px;
+   float: left;
 }
 
 .imageContainer {
