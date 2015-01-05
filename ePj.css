@@ -99,14 +99,15 @@ li {
    float: left;
 }
 
+#companyName{
+   float: left;
+   font-size: 30px;
+}
+
 .imageContainer {
    float:right;
 }
 
-#companyName{
-   float: right;
-   font-size: 30px;
-}
 
 .btn-primary {
   color: #ffffff;
