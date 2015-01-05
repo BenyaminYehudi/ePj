@@ -186,13 +186,16 @@ li {
         width: 50%;
         height: 50%;
         padding: 16px;
-        border: 16px;
-        border-color: #3D8BFF;
+        border: 16px solid #3D8BFF;
         background-color: #E0E0E0;
         z-index:1002;
         overflow: auto;
 }
 
-canvas{
-   
+#popupLogin{
+   float: left;
+}
+
+#popupRegister{
+   float: right;
 }
