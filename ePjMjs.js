@@ -30,7 +30,7 @@ function checkIfLogged(){
     if(localStorage.getItem("loggedIn")==="true"){
         $("#loginDiv").html('<button class="btn btn-primary" onclick="logOut()">Log Out</button>');        
     } else {
-        $("article").html('Please register if you\'re not already a JB Registered Renter, or login (using the form above), in order to continue <a href="ePjRegister.html"><button class="btn btn-primary">Register</button></a>')
+        $("#light").html('Please register if you\'re not already a JB Registered Renter, or login (using the form above), in order to continue <a href="ePjRegister.html"><button class="btn btn-primary">Register</button></a>').css("display='block';document.getElementById('fade').style.display='block'");
     }
 };
 
