@@ -99,6 +99,11 @@ li {
    float: left;
 }
 
+.company{
+   text-align: center;
+   font-size: 30px;
+}
+
 .imageContainer {
    float:right;
 }
