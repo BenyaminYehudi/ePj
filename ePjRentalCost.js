@@ -34,6 +34,7 @@ function confirmOrder(){
   var theCar = carList[selectedCar];
   var rentedCars = {};
   rentedCars[theCar.licensePlate] = theCar;
+  console.log(rentedCars);
   localStorage.setItem("rentedCars", JSON.stringify(rentedCars));
   delete carList[selectedCar];
   localStorage.setItem("carList", JSON.stringify(carList));
