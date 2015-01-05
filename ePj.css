@@ -99,13 +99,13 @@ li {
    float: left;
 }
 
-.company{
-   text-align: center;
-   font-size: 30px;
-}
-
 .imageContainer {
    float:right;
+}
+
+#companyName{
+   float: right;
+   font-size: 30px;
 }
 
 .btn-primary {
