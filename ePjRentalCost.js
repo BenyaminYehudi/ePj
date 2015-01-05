@@ -37,6 +37,5 @@ function confirmOrder(){
   localStorage.setItem("rentedCars", JSON.stringify(rentedCars));
   delete carList[selectedCar];
   localStorage.setItem("carList", JSON.stringify(carList));
-  $("#rentalConfirmed").html('<h4>Thank you for renting from JB Rental</h4><a href="index.html"><button class="btn btn-primary">Back to Main Page</button></a>').css("display","block");
-  $("#rentalConfirmedfade").css("display","block");
+  alert("Thank you for renting from JB Rental");
 };
