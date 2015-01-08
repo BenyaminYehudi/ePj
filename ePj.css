@@ -112,6 +112,10 @@ li {
    float: left;
 }
 
+.orderButton{
+   float: right;
+}
+
 #companyName{
    text-align: center;
    overflow: hidden;
