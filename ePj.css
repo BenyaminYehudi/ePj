@@ -104,6 +104,7 @@ li {
 
 #companyName{
    text-align: center;
+   overflow: hidden;
    font-size: 50px;
    font-family: Audiowide;
    display: -webkit-flex;
