@@ -23,7 +23,6 @@ body {
    border: 1px solid #cccc33;
    border-radius: 7pt;
    background: #EBEBEB;
-   /* background:url("http://www.yours-cars.eu/IMG/RENAULT/Renault%20safrane%20sea.jpg"); */
    background-size: 100% 100%;
    -webkit-flex: 3 1 60%;
            flex: 3 1 60%;
@@ -68,6 +67,10 @@ body {
 header {
    display: flex;
    justify-content: space-between;
+}
+
+footer{
+   text-align: center;
 }
  
   /* Too narrow to support three columns */
