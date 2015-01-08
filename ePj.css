@@ -64,6 +64,11 @@ body {
    border-radius: 7pt;
    background: #3D8BFF;
    }
+   
+header {
+   display: flex;
+   justify-content: space-between;
+}
  
   /* Too narrow to support three columns */
   @media all and (max-width: 640px) {
