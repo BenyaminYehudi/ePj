@@ -88,7 +88,11 @@ body {
 /*#loginDiv{
    float: right;
 }*/
-  
+
+header li {
+   display: inline;
+}
+
 li {
    list-style-type:none;
 }
