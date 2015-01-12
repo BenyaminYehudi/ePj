@@ -140,6 +140,9 @@ li {
    font-family: Audiowide;
 }
 
+.mainRegisterImage{
+   width: 100%;
+}
 
 .btn-primary {
   color: #ffffff;
