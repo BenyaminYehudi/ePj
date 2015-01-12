@@ -45,7 +45,7 @@ function loginPopup(){
 
 function checkIfLogged(){
     if(localStorage.getItem("loggedIn")==="true"){
-        $("#loginDiv").html('<span class="userName">User: <span><span id="loggedUser"></span><button class="btn btn-primary" onclick="logOut()">Log Out</button>');
+        $("#loginDiv").html('<span class="userName">User: </span><span id="loggedUser"></span><button class="btn btn-primary" onclick="logOut()">Log Out</button>');
         $("#sideNav").html('<h4>Our Fleet</h4><ul><li><a href="ePjCars.html"><button class="btn btn-primary">Our Cars</button></a></li></ul><h4>Returning a car?<h4><ul><li><a href="ePjReturnCar.html"><button class="btn btn-primary">Return Car</button></a></li></ul>');
         $("#light").css("display","none");
         $("#fade").css("display","none");
