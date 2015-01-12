@@ -15,13 +15,13 @@ refreshed();
 });
 
 	
-function User (userName, password, email, bDate, homePhone, mobilePhone, drivingLicense) {
+function User (userName, password, email, bDate, primaryPhone, secondaryPhone, drivingLicense) {
 	this.userName = userName;
 	this.password = password;
 	this.email = email;
 	this.bDate = bDate;
-	this.homePhone = homePhone;
-	this.mobilePhone = mobilePhone;
+	this.primaryPhone = primaryPhone;
+	this.secondaryPhone = secondaryPhone;
 	this.drivingLicense = drivingLicense;
 };
 
@@ -32,11 +32,11 @@ function register(){
 	var bDay= $("#bDay").val();
 	var bMonth= $("#bMonth").val();
 	var bYear= $("#bYear").val();
-	var homePhone= $("#home").val();
-	var mobilePhone= $("#mobile").val();
+	var primaryPhone= $("#primaryPhone").val();
+	var secondaryPhone= $("#secondaryPhone").val();
 	var drivingLicense= $("#license").val();
 	var bDate = new Date(bYear, bMonth, bDay);
-	var newUser = new User (userName, password, email, bDate, homePhone, mobilePhone, drivingLicense);
+	var newUser = new User (userName, password, email, bDate, primaryPhone, secondaryPhone, drivingLicense);
 	localStorage.setItem("user", JSON.stringify(newUser));
 }
 
@@ -49,7 +49,7 @@ function refreshed(){
 /*	$("#bDay").val(a.bDate.getDate());
 	$("#bMonth").val(a.bDate.getMonth());
 	$("#bYear").val(a.bDate.getFullYear());
-*/	$("#home").val(a.homePhone);
-	$("#mobile").val(a.mobilePhone);
+*/	$("#primaryPhone").val(a.primaryPhone);
+	$("#secondaryPhone").val(a.secondaryPhone);
 	$("#license").val(a.drivingLicense);
 }
