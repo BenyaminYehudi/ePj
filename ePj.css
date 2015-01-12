@@ -134,6 +134,12 @@ li {
    display:         flex;
 }
 
+.userName {
+   text-align: center;
+   font-size: 20px;
+   font-family: Audiowide;
+}
+
 
 .btn-primary {
   color: #ffffff;
