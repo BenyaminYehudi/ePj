@@ -72,6 +72,10 @@ header {
 footer{
    text-align: center;
 }
+
+li button {
+  width:8em;
+}
  
   /* Too narrow to support three columns */
   @media all and (max-width: 640px) {
