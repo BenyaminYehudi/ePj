@@ -38,7 +38,7 @@ function register(){
 	var bDate = new Date(bYear, bMonth, bDay);
 	var newUser = new User (userName, password, email, bDate, homePhone, mobilePhone, drivingLicense);
 	localStorage.setItem("user", JSON.stringify(newUser));
-	$("#logInPopup").html('<div id="popupLogin"><h1>Login:</h1><ul><li><input type="text" name="username" id="popupUser" placeholder="Username"></li><li><input type="password" name="password" id="popupPass" placeholder="Password"></li><li><button class="btn btn-primary" onclick="loginPopup()">LOGIN</button></li></ul></div>').css("display","block");
+	$("#logInPopup").html('<div id="popupLogin"><h1>Login:</h1><ul><li><input type="text" name="username" id="popupUser" placeholder="Username"></li><li><input type="password" name="password" id="popupPass" placeholder="Password"></li><li><button class="btn btn-primary" onclick="loginPopupRegst()">LOGIN</button></li></ul></div>').css("display","block");
         $("#logInPopupFade").css("display","block");
 }
 
@@ -55,3 +55,21 @@ function refreshed(){
 	$("#mobile").val(a.mobilePhone);
 	$("#license").val(a.drivingLicense);
 }
+
+function loginPopupRegst(){
+    var usrLog= $("#popupUser").val();
+    console.log(usrLog);
+    var pswLog= $("#popupPass").val();
+    console.log(pswLog);
+    var a = localStorage.getItem("user");
+    a = JSON.parse(a);
+    var lclStrgUser = a.userName;
+    var lclStrgPass = a.password;
+    if(usrLog===lclStrgUser && pswLog===lclStrgPass){
+        localStorage.setItem("loggedIn", true);
+        checkIfLogged();
+        window.location="index.html"
+    } else {
+        localStorage.setItem("loggedIn", false);
+    }
+};
