@@ -38,6 +38,8 @@ function register(){
 	var bDate = new Date(bYear, bMonth, bDay);
 	var newUser = new User (userName, password, email, bDate, homePhone, mobilePhone, drivingLicense);
 	localStorage.setItem("user", JSON.stringify(newUser));
+	$("#logInPopup").html('<div id="popupLogin"><h1>Login:</h1><ul><li><input type="text" name="username" id="popupUser" placeholder="Username"></li><li><input type="password" name="password" id="popupPass" placeholder="Password"></li><li><button class="btn btn-primary" onclick="loginPopup()">LOGIN</button></li></ul></div>').css("display","block");
+        $("#logInPopupFade").css("display","block");
 }
 
 function refreshed(){
