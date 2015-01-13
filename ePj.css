@@ -147,6 +147,10 @@ li {
    background-color: rgb(203, 220, 228);
 }
 
+#confirmedRentOrder {
+   text-align: center;
+}
+
 .imageContainer {
    display: -webkit-flex;
    display:         flex;
