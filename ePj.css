@@ -129,6 +129,11 @@ li {
    display:         flex;
 }
 
+#carDetailsContainer {
+   display: -webkit-flex;
+   display:         flex;
+}
+
 .imageContainer {
    display: -webkit-flex;
    display:         flex;
