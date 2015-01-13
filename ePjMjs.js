@@ -11,9 +11,7 @@ checkIfLogged();
 
 function login(){
     var usrLog= $("#userNameLOGIN").val();
-    console.log(usrLog);
     var pswLog= $("#passwordLOGIN").val();
-    console.log(pswLog);
     var a = localStorage.getItem("user");
     a = JSON.parse(a);
     var lclStrgUser = a.userName;
@@ -28,9 +26,7 @@ function login(){
 
 function loginPopup(){
     var usrLog= $("#popupUser").val();
-    console.log(usrLog);
     var pswLog= $("#popupPass").val();
-    console.log(pswLog);
     var a = localStorage.getItem("user");
     a = JSON.parse(a);
     var lclStrgUser = a.userName;
