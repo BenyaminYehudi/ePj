@@ -125,6 +125,11 @@ li {
    font-family: audiowide;
 }
 
+#result {
+   text-align: center;
+   padding-top: 40px;
+}
+
 #companyName{
    text-align: center;
    overflow: hidden;
