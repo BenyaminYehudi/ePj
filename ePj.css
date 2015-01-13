@@ -135,6 +135,7 @@ li {
 }
 
 #carDetailsContainer {
+   display: none;
    display: -webkit-flex;
    display:         flex;
    border: ridge rgb(164, 166, 93);
