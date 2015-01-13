@@ -33,11 +33,9 @@
  </header>
  <div id='main'>
     <article>
-      <!-- <canvas> -->
-        <div class="imageContainer">
-          <div id="changingCars"></div>
-        </div>
-      <!-- </canvas> --> 
+      <div class="imageContainer">
+        <div id="changingCars"></div>
+      </div>
       <ul>
         <li><button id="12-345-67" class="btn btn-primary">Nissan Versa</button></li>
         <li><button id="21-543-76" class="btn btn-primary">Fiat 500</button></li>
@@ -50,7 +48,10 @@
         <li><button id="40-902-54" class="btn btn-primary">Dodge Charger</button></li>
         <li><button id="27-832-90" class="btn btn-primary">Chevy Spark</button></li>
       </ul>
-      <div id="carDetails"></div>
+      <div id="carDetailsContainer">
+        <div id="carDetails"></div>
+        <div id="carImg"></div>
+      </div>
       <div id="light" class="white_content">This is the lightbox content. <a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">Close</a></div>
     <div id="fade" class="black_overlay"></div>
     </article>
