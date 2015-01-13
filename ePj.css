@@ -132,6 +132,7 @@ li {
 .imageContainer {
    display: -webkit-flex;
    display:         flex;
+   float: right;
 }
 
 .userName {
