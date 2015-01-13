@@ -1,6 +1,6 @@
 $( document ).ready(function() {
 	
-function Car (licensePlate, transmissionType, company, year, carModel, basePrice) {
+function Car (licensePlate, transmissionType, company, year, carModel, basePrice, carImage) {
 	this.licensePlate = licensePlate;
 	this.transmissionType = transmissionType;
 	this.company = company;
