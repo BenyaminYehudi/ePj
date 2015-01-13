@@ -163,6 +163,14 @@ li {
    border-radius: inherit;
 }
 
+#popupLogin {
+   float: left;
+}
+
+#popupRegister {
+   float: right;
+}
+
 .imageContainer {
    display: -webkit-flex;
    display:         flex;
