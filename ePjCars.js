@@ -42,7 +42,7 @@ function showCar(carId){
 };
 
 function showCarImage(carId){
-	var carImg = '<img src"'+carList[carId].carImage+'" />';
+	var carImg = '<img src="'+carList[carId].carImage+'" />';
 	$("#carImg").html(carImg);
 };
 
