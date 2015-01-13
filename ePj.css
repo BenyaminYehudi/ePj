@@ -98,9 +98,9 @@ li button {
    }
   }
   
-/*#loginDiv{
-   float: right;
-}*/
+.copyright {
+   margin-top: 40px;
+}
 
 header li {
    display: inline;
