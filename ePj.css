@@ -158,6 +158,10 @@ li {
    font-size: small;
 }
 
+#returnedCar {
+   text-align: center;
+}
+
 #popupLogin {
    float: left;
 }
