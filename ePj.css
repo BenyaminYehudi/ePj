@@ -158,11 +158,6 @@ li {
    justify-content: space-around;
 }
 
-#light div {
-   border: groove rgb(164, 166, 93);
-   border-radius: inherit;
-}
-
 #popupLogin {
    float: left;
 }
