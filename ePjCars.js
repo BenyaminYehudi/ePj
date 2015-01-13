@@ -39,6 +39,7 @@ function showCar(carId){
 	carDetails= carDetails+"</ul>";
 	carDetails= carDetails+"<button class='btn btn-primary' onclick='proceed(\""+carId+"\")'>Proceed</button>";
 	$("#carDetails").html(carDetails);
+	$("#carDetailsContainer").css("border","ridge #A4A65D");
 };
 
 function showCarImage(carId){
