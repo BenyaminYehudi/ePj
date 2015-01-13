@@ -33,7 +33,7 @@ function showCar(carId){
 	carDetails= carDetails+"<li>Company: "+carList[carId].company+"</li>";
 	carDetails= carDetails+"<li>Year: "+carList[carId].year+"</li>";
 	carDetails= carDetails+"<li>Model: "+carList[carId].carModel+"</li>";
-	carDetails= carDetails+"<li>Base Price: "+carList[carId].basePrice+"</li>";
+	carDetails= carDetails+"<li>Base Price: $"+carList[carId].basePrice+"</li>";
 	carDetails= carDetails+"</ul>";
 	carDetails= carDetails+"<button class='btn btn-primary' onclick='proceed(\""+carId+"\")'>Proceed</button>";
 	$("#carDetails").html(carDetails);
