@@ -31,10 +31,10 @@ $("li button").on("click", function(){
 
 function showCar(carId){
 	var carDetails = "<ul><li>License: "+carList[carId].licensePlate+"</li>";
-	carDetails= carDetails+"<li>Transmission: "+carList[carId].transmissionType+"</li>";
 	carDetails= carDetails+"<li>Company: "+carList[carId].company+"</li>";
-	carDetails= carDetails+"<li>Year: "+carList[carId].year+"</li>";
 	carDetails= carDetails+"<li>Model: "+carList[carId].carModel+"</li>";
+	carDetails= carDetails+"<li>Year: "+carList[carId].year+"</li>";
+	carDetails= carDetails+"<li>Transmission: "+carList[carId].transmissionType+"</li>";
 	carDetails= carDetails+"<li>Base Price: $"+carList[carId].basePrice+"</li>";
 	carDetails= carDetails+"</ul>";
 	carDetails= carDetails+"<button class='btn btn-primary' onclick='proceed(\""+carId+"\")'>Proceed</button>";
