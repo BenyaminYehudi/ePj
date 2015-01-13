@@ -152,6 +152,12 @@ li {
    font-family: Audiowide;
 }
 
+#light {
+   display: -webkit-flex;
+   display: flex;
+   justify-content: space-around;
+}
+
 .imageContainer {
    display: -webkit-flex;
    display:         flex;
