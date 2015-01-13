@@ -149,14 +149,12 @@ li {
 
 #confirmedRentOrder {
    text-align: center;
-   font-family: Audiowide;
 }
 
 #light {
    display: -webkit-flex;
    display: flex;
    justify-content: space-around;
-   font-family: audiowide;
    font-size: small;
 }
 
@@ -278,4 +276,5 @@ li {
         background-color: #E0E0E0;
         z-index:1002;
         overflow: auto;
+        font-family: Audiowide;
 }
