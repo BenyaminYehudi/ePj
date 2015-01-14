@@ -63,5 +63,5 @@ function logOut(){
 };
 
 function closePopup(){
-	window.location="index.html"
+	location.reload();
 }
