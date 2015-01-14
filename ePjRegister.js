@@ -40,7 +40,10 @@ function register(){
 	var emailRegstr= $("#email").val();
 	var a = localStorage.getItem("user");
 	a = JSON.parse(a);
-	var lclStrgEmail = a.email;
+	var lclStrgEmail;
+	if(a.hasOwnProperty("email")){
+		lclStrgEmail = a.email;
+	}
 	if(emailRegstr!==lclStrgEmail){
 		localStorage.setItem("singleAccountPerMail", true);
 		localStorage.setItem("user", JSON.stringify(newUser));
