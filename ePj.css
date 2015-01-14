@@ -96,6 +96,11 @@ li button {
     min-height: 50px;
     max-height: 50px;
    }
+   
+   body{
+      width:100%;
+   }
+   
   }
   
 .copyright {
