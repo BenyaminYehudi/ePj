@@ -38,7 +38,7 @@ function register(){
 	var bDate = new Date(bYear, bMonth, bDay);
 	var newUser = new User (userName, password, email, bDate, homePhone, mobilePhone, drivingLicense);
 	localStorage.setItem("user", JSON.stringify(newUser));
-	$("#logInPopup").html('<div id="popupLogin"><h1>Login:</h1><ul><li><input type="text" name="username" id="popupUser" placeholder="Username"></li><li><input type="password" name="password" id="popupPass" placeholder="Password"></li><li><button class="btn btn-primary" onclick="loginPopupRegst()">LOGIN</button></li></ul></div>').css("display","block");
+	$("#logInPopup").html('<div id="popupLoginRegst"><h1>Login:</h1><ul><li><input type="text" name="username" id="popupUserRegst" placeholder="Username"></li><li><input type="password" name="password" id="popupPassRegst" placeholder="Password"></li><li><button class="btn btn-primary" onclick="loginPopupRegst()">LOGIN</button></li></ul></div>').css("display","block");
         $("#logInPopupFade").css("display","block");
         checkIfRegistered();
 }
@@ -58,8 +58,8 @@ function refreshed(){
 }
 
 function loginPopupRegst(){
-    var usrLog= $("#popupUser").val();
-    var pswLog= $("#popupPass").val();
+    var usrLog= $("#popupUserRegst").val();
+    var pswLog= $("#popupPassRegst").val();
     var a = localStorage.getItem("user");
     a = JSON.parse(a);
     var lclStrgUser = a.userName;
