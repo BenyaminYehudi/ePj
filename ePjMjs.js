@@ -21,8 +21,8 @@ function login(){
         checkIfLogged();
     } else {
         localStorage.setItem("loggedIn", false);
-        $("#light").html('<div class="loginError">Wrong username or password!</div><button class="btn btn-primary" onclick="closePopup()">Close</button>').css("display","block");
-        $("#fade").css("display","block");
+        $("#logInPopupError").html('<div class="loginError">Wrong username or password!</div><button class="btn btn-primary" onclick="closePopup()">Close</button>').css("display","block");
+        $("#logInPopupErrorFade").css("display","block");
     }
 };
 
