@@ -37,6 +37,10 @@ function register(){
 	var drivingLicense= $("#license").val();
 	var bDate = new Date(bYear, bMonth, bDay);
 	var newUser = new User (userName, password, email, bDate, homePhone, mobilePhone, drivingLicense);
+	/*   if(){
+	   	var a = localStorage.getItem("email");
+		a = JSON.parse(a);
+	   } */
 	localStorage.setItem("user", JSON.stringify(newUser));
 	$("#logInPopup").html('<div id="popupLoginRegst"><h1>Registration completed!</h1></div><h3>Login:</h3><ul><li><input type="text" name="username" id="popupUserRegst" placeholder="Username"></li><li><input type="password" name="password" id="popupPassRegst" placeholder="Password"></li><li><button class="btn btn-primary" onclick="loginPopupRegst();goMainPage();">LOGIN</button></li></ul></div>').css("display","block");
         $("#logInPopupFade").css("display","block");
@@ -80,7 +84,7 @@ function goMainPage(){
 
 function checkIfRegistered(){
 	var emailRegstr= $("#email").val();
-	var a = localStorage.getItem("email");
+	var a = localStorage.getItem("user");
 	a = JSON.parse(a);
 	var lclStrgEmail = a.email;
 	if(emailRegstr!==lclStrgEmail){
