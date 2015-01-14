@@ -40,7 +40,7 @@ function register(){
 	localStorage.setItem("user", JSON.stringify(newUser));
 	$("#logInPopup").html('<div id="popupLoginRegst"><h1>Login:</h1><ul><li><input type="text" name="username" id="popupUserRegst" placeholder="Username"></li><li><input type="password" name="password" id="popupPassRegst" placeholder="Password"></li><li><button class="btn btn-primary" onclick="loginPopupRegst()">LOGIN</button></li></ul></div>').css("display","block");
         $("#logInPopupFade").css("display","block");
-        checkIfRegistered();
+       /* checkIfRegistered(); */
 }
 
 function refreshed(){
