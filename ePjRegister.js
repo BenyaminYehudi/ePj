@@ -37,14 +37,22 @@ function register(){
 	var drivingLicense= $("#license").val();
 	var bDate = new Date(bYear, bMonth, bDay);
 	var newUser = new User (userName, password, email, bDate, homePhone, mobilePhone, drivingLicense);
-	/*   if(){
-	   	var a = localStorage.getItem("email");
-		a = JSON.parse(a);
-	   } */
-	localStorage.setItem("user", JSON.stringify(newUser));
-	$("#logInPopup").html('<div id="popupLoginRegst"><h1>Registration completed!</h1></div><h3>Login:</h3><ul><li><input type="text" name="username" id="popupUserRegst" placeholder="Username"></li><li><input type="password" name="password" id="popupPassRegst" placeholder="Password"></li><li><button class="btn btn-primary" onclick="loginPopupRegst();goMainPage();">LOGIN</button></li></ul></div>').css("display","block");
-        $("#logInPopupFade").css("display","block");
-        checkIfRegistered();
+	var emailRegstr= $("#email").val();
+	var a = localStorage.getItem("user");
+	a = JSON.parse(a);
+	var lclStrgEmail = a.email;
+	if(emailRegstr!==lclStrgEmail){
+		localStorage.setItem("singleAccountPerMail", true);
+		localStorage.setItem("user", JSON.stringify(newUser));
+		$("#logInPopup").html('<div id="popupLoginRegst"><h1>Registration completed!</h1></div><h3>Login:</h3><ul><li><input type="text" name="username" id="popupUserRegst" placeholder="Username"></li><li><input type="password" name="password" id="popupPassRegst" placeholder="Password"></li><li><button class="btn btn-primary" onclick="loginPopupRegst();goMainPage();">LOGIN</button></li></ul></div>').css("display","block");
+        	$("#logInPopupFade").css("display","block");
+	} else {
+		localStorage.setItem("singleAccountPerMail", false);
+		$("#logInPopup").html('<div id="popupLoginRegst"><h1>This email is already associated with an existing account!</h1><h4>Please try again with a different email address</h4></div><button class="btn btn-primary" onclick="close()">Close</button>').css("display","block");
+        	$("#logInPopupFade").css("display","block");
+	}
+	
+     /*   checkIfRegistered(); */
 }
 
 function refreshed(){
@@ -81,6 +89,10 @@ function goMainPage(){
 	window.location="index.html"
 }
 
+function close(){
+	$("#logInPopup").css("display","none");
+	$("#logInPopupFade").css("display","none");
+}
 
 function checkIfRegistered(){
 	var emailRegstr= $("#email").val();
