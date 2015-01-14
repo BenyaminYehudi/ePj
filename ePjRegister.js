@@ -72,7 +72,7 @@ function loginPopupRegst(){
         localStorage.setItem("loggedIn", false);
     }
 };
-
+/*
 function checkIfRegistered(){
 	var emailRegstr= $("#email").val();
 	var a = localStorage.getItem("email");
@@ -85,3 +85,4 @@ function checkIfRegistered(){
 		alert("This email is already associated with an existing account!");
 	}
 };
+*/
