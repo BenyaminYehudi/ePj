@@ -176,6 +176,23 @@ aside img {
    text-align: center;
 }
 
+#containerRR {
+   font-family: audiowide;
+}
+
+.leftRR {
+   width: 200px;
+}
+
+.centerRR {
+   width: 50%;
+   margin: 0 auto;
+}
+
+.rightRR {
+   float: right;
+}
+
 .imageContainer {
    display: -webkit-flex;
    display:         flex;
