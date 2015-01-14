@@ -67,7 +67,7 @@ function loginPopupRegst(){
     if(usrLog===lclStrgUser && pswLog===lclStrgPass){
         localStorage.setItem("loggedIn", true);
         checkIfLogged();
-        window.location="index.html"
+       /* window.location="index.html"*/
     } else {
         localStorage.setItem("loggedIn", false);
     }
