@@ -21,6 +21,7 @@ function login(){
         checkIfLogged();
     } else {
         localStorage.setItem("loggedIn", false);
+        alert("Wrong username or password");
     }
 };
 
@@ -36,6 +37,7 @@ function loginPopup(){
         checkIfLogged();
     } else {
         localStorage.setItem("loggedIn", false);
+        alert("Wrong username or password");
     }
 };
 
