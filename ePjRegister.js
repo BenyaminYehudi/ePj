@@ -40,6 +40,7 @@ function register(){
 	localStorage.setItem("user", JSON.stringify(newUser));
 	$("#logInPopup").html('<div id="popupLogin"><h1>Login:</h1><ul><li><input type="text" name="username" id="popupUser" placeholder="Username"></li><li><input type="password" name="password" id="popupPass" placeholder="Password"></li><li><button class="btn btn-primary" onclick="loginPopupRegst()">LOGIN</button></li></ul></div>').css("display","block");
         $("#logInPopupFade").css("display","block");
+        checkIfRegistered();
 }
 
 function refreshed(){
@@ -58,9 +59,7 @@ function refreshed(){
 
 function loginPopupRegst(){
     var usrLog= $("#popupUser").val();
-    console.log(usrLog);
     var pswLog= $("#popupPass").val();
-    console.log(pswLog);
     var a = localStorage.getItem("user");
     a = JSON.parse(a);
     var lclStrgUser = a.userName;
@@ -72,4 +71,17 @@ function loginPopupRegst(){
     } else {
         localStorage.setItem("loggedIn", false);
     }
+};
+
+function checkIfRegistered(){
+	var emailRegstr= $("#email").val();
+	var a = localStorage.getItem("email");
+	a = JSON.parse(a);
+	var lclStrgEmail = a.email;
+	if(emailRegstr!==lclStrgEmail){
+		localStorage.setItem("singleAccountPerMail", true);
+	} else {
+		localStorage.setItem("singleAccountPerMail", false);
+		alert("This email is already associated with an existing account!");
+	}
 };
