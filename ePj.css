@@ -158,7 +158,7 @@ li {
    font-size: small;
 }
 
-#returnedCar {
+#returnedCar, #loginPopup {
    text-align: center;
 }
 
@@ -168,10 +168,6 @@ li {
 
 #popupRegister {
    float: right;
-   text-align: center;
-}
-
-#popupLoginRegst {
    text-align: center;
 }
 
