@@ -199,6 +199,17 @@ aside img {
    float: right;
 }
 
+.loginError {
+   clear: both;
+   width: 50%;
+   margin: auto;
+   border: 5px groove red;
+   border-radius: inherit;
+   text-align: center;
+   color: #966E1E;
+   font-size: 16px;
+}
+
 .userName {
    text-align: center;
    font-size: 20px;
