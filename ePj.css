@@ -110,6 +110,11 @@ li {
    list-style-type:none;
 }
 
+aside img {
+   width: 100%;
+   border: 1px solid #A4A65D;
+}
+
 .logo {
    width:100px;
    height:100px;
