@@ -48,7 +48,7 @@ function register(){
         	$("#logInPopupFade").css("display","block");
 	} else {
 		localStorage.setItem("singleAccountPerMail", false);
-		$("#logInPopup").html('<div id="popupLoginRegst"><h1>This email is already associated with an existing account!</h1><h4>Please try again with a different email address</h4></div><button class="btn btn-primary" onclick="back()">Back</button>').css("display","block");
+		$("#logInPopup").html('<div id="popupLoginRegst"><h1>This email is already associated with an existing account!</h1><h4>Please try again with a different email address</h4></div><button class="btn btn-warning" onclick="back()">Back</button>').css("display","block");
         	$("#logInPopupFade").css("display","block");
 	}
 	
