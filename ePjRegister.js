@@ -48,7 +48,7 @@ function register(){
         	$("#logInPopupFade").css("display","block");
 	} else {
 		localStorage.setItem("singleAccountPerMail", false);
-		$("#logInPopup").html('<div id="popupLoginRegst"><h1>This email is already associated with an existing account!</h1><h4>Please try again with a different email address</h4></div><button class="btn btn-primary" onclick="close()">Close</button>').css("display","block");
+		$("#logInPopup").html('<div id="popupLoginRegst"><h1>This email is already associated with an existing account!</h1><h4>Please try again with a different email address</h4></div><button class="btn btn-primary" onclick="back()">Back</button>').css("display","block");
         	$("#logInPopupFade").css("display","block");
 	}
 	
@@ -89,21 +89,6 @@ function goMainPage(){
 	window.location="index.html"
 }
 
-function close(){
-	$("#logInPopup").css("display","none");
-	$("#logInPopupFade").css("display","none");
+function back(){
+	window.location="ePjRegister.html"
 }
-
-function checkIfRegistered(){
-	var emailRegstr= $("#email").val();
-	var a = localStorage.getItem("user");
-	a = JSON.parse(a);
-	var lclStrgEmail = a.email;
-	if(emailRegstr!==lclStrgEmail){
-		localStorage.setItem("singleAccountPerMail", true);
-	} else {
-		localStorage.setItem("singleAccountPerMail", false);
-		alert("This email is already associated with an existing account!");
-	}
-};
-
