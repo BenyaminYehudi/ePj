@@ -391,7 +391,7 @@ aside img {
       margin: 0;
    }
    
-   nav li {
+   nav ul, li {
       display: inline;
    }
    
