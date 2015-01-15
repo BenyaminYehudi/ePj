@@ -403,8 +403,12 @@ aside img {
       display: inline;
    }
    
-   aside img {
-      width: 30%;
+   aside img:nth-child(3) {
+      display: none;
+   }
+   
+   aside img:nth-child(4) {
+      display: none;
    }
    
    .copyright {
