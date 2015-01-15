@@ -76,50 +76,6 @@ footer{
 li button {
   width:8em;
 }
- 
-  /* Too narrow to support three columns */
-  @media all and (max-width: 640px) {
-  
-   #main, #page {
-    -webkit-flex-flow: column;
-            flex-flow: column;
-            flex-direction: column;
-   }
-
-   #main > article, #main > nav, #main > aside {
-    /* Return them to document order */
-    -webkit-order: 0;
-            order: 0;
-   }
-  
-   #main > nav, #main > aside, header, footer, header > img {
-    min-height: 50px;
-    max-height: 50px;
-   }
-   
-   body{
-      width: 100%;
-   }
-   
-   .logo {
-   width:50px;
-   height:50px;
-   float: left;
-   }
-   
-   #companyName {
-      font-size:20px;
-   }
-   
-   nav li {
-      display: inline;
-   }
-   
-   nav h4, aside h4, aside img, .liText {
-      display: none;
-   }
-   
-  }
   
 .copyright {
    margin-top: 40px;
@@ -392,3 +348,47 @@ aside img {
         overflow: auto;
         font-family: audiowide;
 }
+
+  /* Too narrow to support three columns */
+  @media all and (max-width: 640px) {
+  
+   #main, #page {
+    -webkit-flex-flow: column;
+            flex-flow: column;
+            flex-direction: column;
+   }
+
+   #main > article, #main > nav, #main > aside {
+    /* Return them to document order */
+    -webkit-order: 0;
+            order: 0;
+   }
+  
+   #main > nav, #main > aside, header, footer, header > img {
+    min-height: 50px;
+    max-height: 50px;
+   }
+   
+   body{
+      width: 100%;
+   }
+   
+   .logo {
+   width:50px;
+   height:50px;
+   float: left;
+   }
+   
+   #companyName {
+      font-size:20px;
+   }
+   
+   nav li {
+      display: inline;
+   }
+   
+   nav h4, aside h4, aside img, .liText {
+      display: none;
+   }
+   
+  }
