@@ -399,8 +399,8 @@ aside img {
       display: none;
    }
    
-   aside p {
-      display: none;
+   aside li {
+      display: inline;
    }
    
    .copyright {
