@@ -391,6 +391,10 @@ aside img {
       margin: 0;
    }
    
+   article img {
+      width: 100%;
+   }
+   
    nav ul, li {
       display: inline;
    }
