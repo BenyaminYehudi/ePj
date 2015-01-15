@@ -399,15 +399,7 @@ aside img {
       display: none;
    }
    
-   aside li {
-      display: inline;
-   }
-   
-   aside img:nth-child(3) {
-      display: none;
-   }
-   
-   aside img:nth-child(4) {
+   .vanishSmallCSS {
       display: none;
    }
    
