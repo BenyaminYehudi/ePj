@@ -403,6 +403,10 @@ aside img {
       display: inline;
    }
    
+   aside img {
+      width: 30%;
+   }
+   
    .copyright {
    margin-top: 20px;
    }
