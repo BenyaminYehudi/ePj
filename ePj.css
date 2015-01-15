@@ -105,7 +105,7 @@ li button {
       display: inline;
    }
    
-   nav h4, aside h4, aside img {
+   nav h4, aside h4, aside img, .liText {
       display: none;
    }
    
