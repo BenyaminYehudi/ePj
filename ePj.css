@@ -98,7 +98,15 @@ li button {
    }
    
    body{
-      width:100%;
+      width: 100%;
+   }
+   
+   nav li {
+      display: inline;
+   }
+   
+   nav h4, aside h4, aside img {
+      display: none;
    }
    
   }
