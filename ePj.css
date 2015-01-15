@@ -101,6 +101,16 @@ li button {
       width: 100%;
    }
    
+   .logo {
+   width:50px;
+   height:50px;
+   float: left;
+   }
+   
+   #companyName {
+      font-size:20em;
+   }
+   
    nav li {
       display: inline;
    }
