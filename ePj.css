@@ -391,7 +391,9 @@ aside img {
       display: none;
    }
    
-   
+   aside p {
+      display: none;
+   }
    
    .copyright {
    margin-top: 20px;
