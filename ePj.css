@@ -73,6 +73,14 @@ footer{
    text-align: center;
 }
 
+nav ul {
+   padding-left: 30px;
+}
+
+aside ul {
+   padding-left: 0px;
+}
+
 li button {
   width:8em;
 }
