@@ -366,7 +366,7 @@ aside img {
   
    #main > nav, #main > aside, header, footer, header > img {
     min-height: 50px;
-    max-height: 50px;
+    max-height: 100%;
    }
    
    body{
@@ -379,15 +379,15 @@ aside img {
    float: left;
    }
    
-   #companyName {
-      font-size:20px;
+   header p {
+      margin: 0;
    }
    
    nav li {
       display: inline;
    }
    
-   nav h4, aside h4, aside img, .liText {
+   nav h4, aside h4, aside img, .liText, #companyName {
       display: none;
    }
    
